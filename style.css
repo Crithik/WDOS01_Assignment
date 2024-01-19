@@ -1,0 +1,904 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:#cdcdcdb1;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/sri-lankan-wildlife-animals.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+.header {   
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    
+}           
+
+.header h1 {
+    color: white;
+}
+
+.logo {
+    display: block;
+}
+
+.logo a img {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+/* navigation */
+.navigation {       
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 40px 25px;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.5s;
+}
+
+/* Add styles for the sub-menu */
+.menu .dropdown {
+    position: relative;
+}
+
+.menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu .dropdown:hover .sub-menu {
+    display: block;
+}
+
+.menu .sub-menu li {
+    width: 100%;
+}
+
+.menu .sub-menu li a {
+    padding: 15px;
+    font-size: 18px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu .sub-menu li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.menu li a:hover {
+    box-shadow: 0 -5px 0 #fff inset,500px 0 0 rgba(255, 255, 255, 0.1) inset;
+    padding: 35px 25px 45px 25px;
+}
+
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.hamburger:before,
+.hamburger:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.hamburger:before {
+    top: -10px;
+    width: 30px;
+}
+
+.hamburger:after {
+    top: 10px;
+    width: 30px;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 30px;
+    height: 100px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger, .toggle-menu {
+    display: none;
+
+}
+
+.navigation input:checked ~ .hamburger {
+    background: transparent;
+}
+
+.navigation input:checked ~ .hamburger::before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked ~ .hamburger::after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.navigation input:checked ~ .menu {
+    right: 0;
+}
+
+@media screen and (max-width: 992px){
+    .hamburger,
+    .toggle-menu {
+        display: block;
+    }
+
+    .header {
+        padding: 10px 20px;
+
+    }
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: linear-gradient(to top, #00093c, #2d0b00);
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    }
+}
+
+.home-title {
+    color: #ffffff;
+    font-size: 60px;
+    margin-top: 100px;
+    text-shadow:  0 0 20px #0c7d24, 0 0 40px #00ff95;
+    text-align: center;
+}
+
+.home-text1{
+    padding-right: 60%;
+}
+
+.home-text2 {
+    padding-left: 60%;
+}
+
+@media screen and (max-width:1180px) {
+    .home-title{
+        font-size: 50px;
+        padding-top: 140px;
+    }
+
+    .home-text1{
+        padding-right: 0;
+    }
+    
+    .home-text2 {
+        padding-left: 0;
+    }
+}
+
+/* intro */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(181, 177, 177, 0.1), rgba(165, 203, 105, 0.3)), url(images/BlackForest-Germany-GettyImages-147180370.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.cta h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.cta p{
+    padding: 20px;
+    color: white;
+}
+
+/* content */
+.content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.content h1{
+    color: #343333;
+    font-size: 60px;
+    margin-top: 70px;
+    
+}
+
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    color: white;
+}
+
+
+.row {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-col{
+    flex-basis: 41%;
+    background: #8c745e;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+.content-col:hover {
+    box-shadow: 0 0 20px #8c745e, 0 0 40px #464838;
+    background: rgb(6, 136, 6);
+}
+
+@media screen and (max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* point list & num list */
+
+/* bullet list */
+.bullet {
+    width: 80%;
+    margin: auto;
+    padding-top:10px;
+    padding-bottom: 0;
+    
+}
+
+.bullet-col {
+    flex-basis: 48%;
+    padding: 10px 2px;
+    color: #006400c1;
+
+}
+
+.bullet-col img {
+    width: 100%;
+    box-shadow: 10px 10px  8px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.bullet-col h2 {
+    padding-top: 0;
+    font-size: 40px;
+    text-shadow: 1px 1px 20px #0c7d24;
+    color: rgb(0, 0, 0);
+}
+
+.bullet-col span {
+    font-weight: bold;
+    
+}
+
+.bullet-col li {
+    padding: 15px 0 10px;
+}
+
+/* num list */
+
+.num-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    color: green;
+}
+
+.num-col img {
+    width: 100%;
+    box-shadow: 10px 10px  8px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.num-col h2 {
+    padding-top: 0;
+    text-shadow: 1px 1px 20px #0c7d24;
+    color: rgb(0, 0, 0);
+}
+
+.num-col li {
+    margin-left: 40px;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 50px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.f-row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.f-col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.f-col h1{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.f-col h3 {
+    width: fit-content;
+    margin-bottom: 15px;
+    position: relative;
+    text-decoration:3px underline ;
+}
+
+.f-col ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.f-col ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid ;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+@media screen and (max-width:500px) {
+    .f-col {
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+/*                                                    Sri Lankan Wildlife Introduction                                       */
+
+.int-main {
+    height: 60Vh;
+    width: 100%;
+    background-image:url(images/photo-1542273917363-3b1817f69a2d.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.int-title {
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 70px;
+    text-shadow:  0 0 20px #0c7d24, 0 0 40px #00ff95;
+}
+
+/* intro page content */
+.int-content {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.int-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.int-col img {
+    width: 100%;;
+    box-shadow: 10px 10px  8px rgb(0, 0, 0);
+}
+
+.int-col h1 {
+    padding-top: 0;
+    font-size: 40px;
+    text-shadow: 0 0 20px #19bd83, 0 0 40px #118a13;
+}
+
+.int-col p {
+    padding: 15px 0 25px;
+    color: rgb(126, 126, 126);
+    background-clip: text;
+    background-image: linear-gradient(red,blue);
+    
+}
+
+.location {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    
+}
+
+.location iframe {
+    width: 100%;
+    box-shadow: 10px 10px 8px rgb(5, 107, 61);
+}
+
+.table{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.table img {
+    height: 150px;
+    width: 150px;
+}
+
+.table tr, th, td {
+    border: 1px solid rgb(0, 129, 19);
+}
+
+.table th {
+    background: #1d5b30;
+    color: white;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:992px) {
+    .int-title {
+        width: 80%;
+        font-size: 25px;
+        padding-left: 40px;
+    }
+
+    .int-col h1 {
+        font-size: 30px
+    }
+
+    .table img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .table {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+/*                                             The Department of Wildlife Conservation                               */
+.Cons-main {
+    height: 60Vh;
+    width: 100%;
+    background-image:url(images/forest-upscaled.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.conservation-title {
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 50px;
+    text-shadow:  0 0 20px #0c7d24, 0 0 40px #00ff95;
+}
+
+.con-intro{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.con-intro h1 {
+    color: #118a13;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.con-intro p {
+    color: rgb(1, 80, 1);
+    
+}
+
+.con-intro iframe {
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px rgb(5, 107, 61)
+}
+
+.con-intro h1, .con-text {
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    background-clip: text;
+    background-image: linear-gradient(red,blue);
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.gal-title{ 
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgb(7, 116, 32),rgb(59, 139, 55));
+    width: 60%;
+    margin: auto;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 400px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.gallery img:hover{
+    cursor: pointer;
+    background-color: rgb(0, 113, 51);
+}
+
+@media screen and (max-width:700px) {
+    .Cons-main{
+        height: 40vh;
+    }
+
+    .conservation-title {
+        font-size: 22px;
+    }
+
+    .gal-title h1 {
+        font-size: 20px;
+    }
+} 
+
+/*                                                       The Sri Lankan Leopard                                          */
+.leo-main {
+    height: 60Vh;
+    width: 100%;
+    background-image:url(images/photo-1601544359642-c76c4f7c3221.jpg);
+    object-position: bottom;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;   
+}
+
+.leo-title {
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 50px;
+    text-shadow:  0 0 20px #0c7d24, 0 0 40px #00ff95;
+}
+
+/*where Leopard is found in Sri Lanka */
+.leo-area {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.leo-area h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgb(16, 142, 43),rgb(49, 164, 43));
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 40px;
+    box-shadow: 1px 1px  9px rgb(0, 0, 0);
+
+}
+
+.leo-area h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.leo-area p {
+    color: green;
+    font-weight: 400;
+}
+
+.leo-area img {
+    height: 50%;
+    width: 50%;
+    display: block; 
+    margin: auto;
+    padding-bottom:70px;
+    animation: linear reveal both;
+	animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+.leo-content {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.leo-header {
+    color: white;
+    background: linear-gradient(rgb(16, 142, 43),rgb(49, 164, 43));
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    box-shadow: 10px 10px  8px rgb(0, 0, 0);
+}
+
+.leo-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.leo-col img {
+    width: 100%;;
+    box-shadow: 10px 10px  8px rgb(0, 0, 0);
+}
+
+.leo-col p {
+    padding: 15px 0 25px;
+    color: green;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 1px solid #000000;
+    background: #61ce64e7;
+    transition: 0.5s;
+    color: white;
+}
+
+/*                                          Animals in Sri Lanka                                      */
+.animal-main {
+    height: 60Vh;
+    width: 100%;
+    background-image:url(images/photo-1472396961693-142e6e269027.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;   
+}
+
+.animal-title {
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 50px;
+    text-shadow:  0 0 20px #0c7d24, 0 0 40px #00ff95;
+}
+
+.animal-int{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(181, 177, 177, 0.1), rgba(165, 203, 105, 0.3)), url(images/wildlife-animal\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.animal-int h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.animal-int p{
+    padding: 20px;
+    color: white;
+}
+
+.animal-btn {
+    text-align: center;
+    width: 100%;
+}
+
+.animal-btn h2 {
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+    padding-bottom: 30px;
+    color: rgb(17, 135, 17);
+}
+
+.animal-content {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.animal-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.animal-col img {
+    width: 100%;;
+    box-shadow: 10px 10px  8px rgb(0, 0, 0);
+}
+
+.animal-col h1 {
+    padding-top: 0;
+    font-size: 40px;
+    text-shadow: 1px 1px 20px #0c7d24;
+    color: rgb(0, 0, 0);
+}
+
+.animal-col p {
+    padding: 15px 0 25px;
+    color: green;
+    font-weight: 600;
+}
+
+@media screen and (max-width:700px){
+    .animal-col h1{
+        font-size: 30px;
+    }
+
+    .animal-btn h2{
+        font-size: 20px;
+    }
+}
