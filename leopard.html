@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sri Lankan Leopard </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="edit.css">
     <link rel="icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +39,7 @@
                             <li><a href="wilpattu.html" class="class-b">for Wilpattu National Park</a></li>
                         </ul>
                     </li>
+                    <li><a href="login.html">login</a></li>
                 </ul>
             </nav>
         </header>
@@ -48,24 +50,25 @@
 
     <!-- three venues where Leopard is found in Sri Lanka -->
     <section class="leo-area">
-        <h1>Places where Lepords live in Sri  Lanka</h1>
+        <h1 id="leo-title"></h1>
         <div>
-            <h3>Horton Plains National Park</h3>
-            <p>Situated in the central highlands of Sri Lanka, Horton Plains National Park is a UNESCO World Heritage Site known for its unique montane grasslands and cloud forests. While leopards are not as commonly spotted here as in Yala or Wilpattu, the park is home to a significant leopard population. The challenging terrain and diverse ecosystems provide leopards with ample prey and concealment opportunities. Visitors to Horton Plains may witness leopards in a more serene and less crowded setting compared to other national parks.</p>
-            <img src="images/leopard-wildcat-big-cat-botswana-46254.jpg">
+            <h3 id="leo-subtitle1"></h3>
+            <p id="leo-paragraph1"></p>
+            <img>
         </div>
         <div>
-            <h3>Wilpattu National Park</h3>
-            <p>Located in the northwestern part of Sri Lanka, Wilpattu National Park is the largest national park in the country. The park's diverse landscape, featuring dense forests, lakes, and open grasslands, provides suitable conditions for leopards. Wilpattu is known for its unique "Willus" or natural lakes, which attract a rich array of wildlife, including leopards. The park's expansive terrain offers opportunities for both game drives and nature walks, enhancing the chances of encountering these elusive big cats.</p>
-            <img src="images/Leopard-Excursion-01.jpg">
+            <h3 id="leo-subtitle2"></h3>
+            <p id="leo-paragraph2"></p>
+            <img>
         </div>
         <div>
-            <h3>Gal Oya National Park</h3>
-            <p>Gal Oya National Park, situated in the Ampara district, is one of the less-explored national parks in Sri Lanka. The park is characterized by diverse ecosystems, including savannahs, grasslands, and evergreen forests. While elephants are a major attraction, Gal Oya is also home to a population of leopards. The park's scenic beauty and the opportunity for boat safaris on the Senanayake Samudraya reservoir enhance the overall wildlife experience, making it a unique destination for leopard enthusiasts.</p>
-            <img src="images/photo-1534759846116-5799c33ce22a.jpg">
+            <h3 id="leo-subtitle3"></h3>
+            <p id="leo-paragraph3"></p>
+            <img>
         </div>
     </section>
 
+    <!-- Threats to Sri Lankan Leopards -->
     <section class="leo-content">
         <div class="leo-header">
             <h1>Threats to Sri Lankan Leopards</h1>
@@ -91,6 +94,34 @@
             </div>
         </div>
     </section>
+
+    <!-- admin edit -->
+    <button class="popup-button" id="show-popup">Edit Content</button>
+    <button class="subs-button" id="logout">Logout</button>
+
+  <div class="popup-container" id="popup-container">
+      <div class="popup-box">
+        <div class="input-box">
+          <label class="sele">Select Content to Edit : </label>
+          <select id="select">
+              <option value="leo-title">Places where Lepords live in Sri Lanka </option>
+              <option value="leo-subtitle1">Horton Plains National Park</option>
+              <option value="leo-paragraph1">About Horton</option>
+              <option value="leo-subtitle2">Wilpattu National Park</option>
+              <option value="leo-paragraph2">About Wilpattu</option>
+              <option value="leo-subtitle3">Gal Oya National Park</option>
+              <option value="leo-paragraph3">About Gal Oya</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <input type="text" class="input-field" id="inputText" placeholder="Enter the new text" required>
+        </div>
+          <button class="save-btn" id="save">Update</button>
+
+          <button class="close-btn" id="close-popup">Exit</button>
+      </div>
+  </div>
 
     <!-- footer -->
     <footer>
@@ -118,9 +149,19 @@
                 <p>+94 77748037</p>
             </div>
         </div>
+        <!-- Newsletter Subscription Form -->
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="newsletterForm">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+              </form>
+        </div>
         <hr>
         <p class="copyright"> © 2024 Wildlife Srilanka - All Rights Reserved</p>
     </footer>
+    <script src="leopard.js"></script>
+    <script src="edit.js"></script>
     
 </body>
 </html>

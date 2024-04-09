@@ -1,0 +1,37 @@
+{
+    "conservationIntroduction": {
+       "title": "Introduction of Wildlife Conservation",
+       "paragraphs": [
+         {
+           "text": "Established in 1949, the Department of Wildlife Conservation in Sri Lanka emerged in response to early conservation efforts dating back to 1889. Initially addressing the rampant destruction of wildlife resources, the department has evolved over the years. Beginning with ordinances to curb the exploitation of elephants, buffaloes, and game, and later expanding to include protected areas like Yala and Wilpattu, the department's mandate grew with the Fauna and Flora Protection Ordinance of 1937."
+         },
+         {
+           "text": "The Wildlife Department's inception in 1949 marked a pivotal moment, responding to the need for a specialized entity to enforce wildlife protection laws and manage the expanding network of wildlife reserves. Over subsequent decades, the department tackled challenges arising from large-scale development projects, establishing protected areas in the Mahaweli region and initiating projects like the Mahaweli Environmental Project with USAID support."
+         },
+         {
+           "text": "In 1993, the department undertook a comprehensive initiative, \"Development of Wildlife Conservation and Protected Area Management,\" focusing on long-term management plans, human resource development, and strategies for wild elephant conservation. This project, funded by UNDP/FAO through Global Environmental Facility (GEF), significantly contributed to the department's evolution and concluded in 1999. Today, the Department of Wildlife Conservation plays a vital role in safeguarding Sri Lanka's diverse fauna and flora against various threats, reflecting its commitment to conservation and sustainable management."
+         }
+       ],
+       "iframe": {
+         "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31687.202514094577!2d79.88915440602784!3d6.902523658183574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705436796510!5m2!1sen!2slk",
+         "width": "400",
+         "height": "300",
+         "style": "border:0;",
+         "allowfullscreen": "",
+         "loading": "lazy",
+         "referrerpolicy": "no-referrer-when-downgrade"
+       }
+    },
+    "gallery": {
+       "title": "Protected by Department of Wildlife Conservation Sri Lanka",
+       "images": [
+         "images/gallery2.jpg",
+         "images/gallery1.jpg",
+         "images/galler3.jpg",
+         "images/gallery4-1589232340.jpg",
+         "images/gallery5.jpg",
+         "images/gallery6.jpg"
+       ]
+    }
+   }
+   

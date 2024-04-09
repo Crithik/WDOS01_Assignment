@@ -1,0 +1,29 @@
+{
+    "sections": [
+       {
+         "title": "Wilpattu Introduction",
+         "content": "Nestled in the northwest of Sri Lanka, Wilpattu National Park is the largest and oldest national park in the country, renowned for its untamed wilderness and diverse ecosystems. The park's name, \"Wilpattu,\" translates to \"Land of Lakes,\" reflecting its characteristic natural features. <br> Encompassing a mosaic of habitats, including dense scrublands, open grassy plains, and numerous water bodies, Wilpattu is a haven for a variety of wildlife species. The park is particularly known for its populations of Sri Lankan leopards, elephants, sloth bears, and a multitude of bird species. <br> One of Wilpattu's distinctive features is its numerous \"villus,\" or natural lakes, which serve as crucial watering holes for the resident fauna. The park's expansive landscapes and off-the-beaten-path feel provide a unique safari experience for visitors seeking a more remote and authentic wildlife encounter. Wilpattu National Park holds historical and cultural significance, with ancient ruins scattered throughout its expanse, adding a layer of intrigue to the natural beauty. As a vital component of Sri Lanka's conservation efforts, Wilpattu showcases the delicate balance between preservation and sustainable tourism, offering a glimpse into the wild heart of the island."
+       },
+       {
+         "title": "Things to Do in Wilpattu National Park",
+         "activities": [
+           {
+             "image": "images/BisateLodge-16.jpg",
+             "title": "Luxury Wildlife Hotels",
+             "description": "Experience Untamed Luxury Indulge in the serenity of nature by staying at luxury wildlife hotels surrounding Wilpattu National Park. These accommodations blend comfort with the thrill of the wild, providing a luxurious retreat amidst the natural beauty of Sri Lanka."
+           },
+           {
+             "image": "images/1680196020938-pexels-ahmad-syahrir-761815.jpg",
+             "title": "Wilpattu National Park Safari",
+             "description": "Embark on an unforgettable safari adventure within the expansive Wilpattu National Park. Traverse through diverse landscapes, from dense forests to open plains, and witness a plethora of wildlife, including elephants, leopards, and various bird species."
+           },
+           {
+             "image": "images/c1.jpg",
+             "title": "Jeep Safari",
+             "description": "Opt for a thrilling jeep safari to explore the rugged terrains of Wilpattu. With experienced guides, venture into the heart of the park, catching glimpses of elusive wildlife and enjoying a front-row seat to the wonders of Sri Lanka's largest national park."
+           }
+         ]
+       }
+    ]
+}
+   

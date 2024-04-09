@@ -1,0 +1,41 @@
+{
+    "sections": [
+        {
+            "title": "Native Sri Lankan Animals",
+            "content": "Sri Lanka, an island nation in the Indian Ocean, is home to a diverse range of indigenous animals adapted to its varied landscapes. Iconic species include the Sri Lankan elephant and leopard, while unique birds like the Sri Lanka Frogmouth and Wood Pigeon add to the island's biodiversity. Conservation efforts focus on protecting these species in national parks and reserves, balancing development with the preservation of Sri Lanka's natural heritage. The indigenous wildlife contributes to the country's cultural and ecological richness, making it a unique destination for wildlife enthusiasts."
+        },
+        {
+            "title": "Here are some more information about Yala National Park & Wilpattu National Park to explore more wildlife",
+            "buttons": [
+                {
+                    "text": "Yala National Park",
+                    "link": "yala.html"
+                },
+                {
+                    "text": "Wilpattu National Park",
+                    "link": "wilpattu.html"
+                }
+            ]
+        },
+        {
+            "type": "animal-content",
+            "rows": [
+                {
+                    "title": "Melursus ursinus inornatus",
+                    "description": "The Sloth Bear, scientifically known as Melursus ursinus inornatus, is a distinctive species native to Sri Lanka. Recognized for its shaggy black fur and a V-shaped white chest mark, it inhabits both dry and wet zones on the island. Sloth bears are omnivores with a unique feeding style, using long claws to extract insects. Found in protected areas like Yala National Park, conservation efforts are crucial due to threats from habitat loss and human-wildlife conflict.",
+                    "image": "images/1000_F_558689035_21UvYB2geNh0qHIwMJlZxVHa1jtNFpL8.jpg"
+                },
+                {
+                    "title": "Semnopithecus vetulus",
+                    "description": "The Purple-faced Langur, scientifically known as Semnopithecus vetulus, is an endemic primate species in Sri Lanka. Distinguished by its dark fur and a distinct purple hue on its face, these langurs inhabit montane forests in the central highlands. Being herbivores, their diet consists of leaves, fruits, and flowers. The Purple-faced Langur plays a vital role in seed dispersal, contributing to the ecological balance of its habitat. Unfortunately, this species faces threats from habitat loss and fragmentation.",
+                    "image": "images/MC910-01-01.jpg"
+                },
+                {
+                    "title": "Columba torringtoni",
+                    "description": "The Sri Lanka Wood Pigeon, scientifically known as Columba torringtoni, is an endemic bird species found in the montane forests of Sri Lanka. Recognized for its vibrant plumage, including a distinctive white patch on its wings, this pigeon thrives in the cool, elevated regions of the island. Feeding mainly on fruits and seeds, the Sri Lanka Wood Pigeon contributes to seed dispersal in its habitat. Its restricted range and specific habitat requirements make it vulnerable to environmental changes. Conservation efforts focus on preserving the montane forests and ensuring the protection of the Sri Lanka Wood Pigeon, underscoring the significance of safeguarding the unique avian diversity of the island.",
+                    "image": "images/7.jpg"
+                }
+            ]
+        }
+    ]
+}

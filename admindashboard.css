@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+.return {
+    position: fixed;
+    top: 20px;  
+    right: 20px; 
+    background-color: rgb(18, 172, 18);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.return a {
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding-top: 30px;
+    text-shadow:  0 0 20px #0c7d24, 0 0 40px #00ff95;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1b8a04;
+    color: #ffffff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.logo img {
+    max-width: 48px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    background-color: #1b8a04;
+
+}
+
+.menu li:hover {
+    background-color: #61c44e;
+    border-radius: 5px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+
+.Locations {
+    position: relative;
+}
+
+.dropdown {
+    background-color: #61c44e;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #56aa46;
+}
+
+.Locations:hover .dropdown {
+    display: block;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+
+.login-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 440px;
+    height: 380px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login_info {
+    display: flex;
+    color: #ff0000;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 70px auto;
+}
+
+.login-header header {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#Clear {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 35px auto;
+    cursor: pointer;
+    border-radius: 35px;
+    border: none;
+}
+
+#edit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 35px auto;
+    cursor: pointer;
+    border-radius: 35px;
+    border: none;
+}
+

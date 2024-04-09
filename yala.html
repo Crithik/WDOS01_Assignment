@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yala National Park </title>
     <link rel="stylesheet" href="yalastyle.css">
+    <link rel="stylesheet" href="edit.css">
     <link rel="icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <!-- navigation -->
     <section class="yala-main">
@@ -38,6 +40,7 @@
                             <li><a href="wilpattu.html" class="class-b">for Wilpattu National Park</a></li>
                         </ul>
                     </li>
+                    <li><a href="login.html">login</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,47 +52,49 @@
     <!-- yala introduction -->
     <section class="yala-int">
         <div class="yala-cen">
-            <h1>Yala Introduction</h1>
-            <p>Yala National Park, situated in the southeastern part of Sri Lanka, stands as the country's most renowned and second-largest national park. Spanning a diverse range of ecosystems, Yala is celebrated for its rich biodiversity and is a haven for wildlife enthusiasts.
-                Encompassing a variety of habitats, including dense jungles, open plains, and coastal areas, Yala is home to a remarkable array of indigenous species. The park's iconic residents include the Sri Lankan elephant, the elusive Sri Lankan leopard, and a host of other mammals, birds, reptiles, and amphibians.
-            
-                Beyond its biological significance, Yala National Park holds cultural importance, with historical landmarks like Sithulpawwa and Magul Maha Viharaya located within its bounds. Visitors to Yala can experience thrilling safari adventures, witnessing the natural behaviors of the diverse wildlife that inhabits this protected area.
-            
-                As a cornerstone of Sri Lanka's conservation efforts, Yala National Park plays a crucial role in preserving the island's natural heritage. It stands as a testament to the coexistence of diverse ecosystems and the tireless efforts to safeguard the unique flora and fauna that call this national park home.
+            <h1 id="yala-title"></h1>
+            <p id="yala-des">
             </p>
         </div>
     </section>
 
     <!-- things to do -->
     <section class="trip">
-        <h1>Things to Do in Yala National Park</h1>
+        <h1 id="yala-todo"></h1>
         <div class="row">
-            <div class="trip-col">
-                <img src="images/9d9b03b59884e560ccfe3e1777cea1fe.jpg">
-                <div class="layer">
-                    <h3>Day Trip</h3>
-                </div>
-            </div>
-            <div class="trip-col">
-                <img src="images/52137d49853012dfa3bbbb0b029c3007.jpg">
-                <div class="layer">
-                    <h3>4WD Tours</h3>
-                </div>
-            </div>
-            <div class="trip-col">
-                <img src="images/54fd33354ec15965d6fb4c7488308e02.jpg">
-                <div class="layer">
-                    <h3>Hiking Tours</h3>
-                </div>
-            </div>
+
         </div>
     </section>
+
+    <!-- admin edit -->
+    <button class="popup-button" id="show-popup">Edit Content</button>
+    <button class="subs-button" id="logout">Logout</button>
+
+    <div class="popup-container" id="popup-container">
+        <div class="popup-box">
+            <div class="input-box">
+                <label class="sele">Select Content to Edit : </label>
+                <select id="select">
+                    <option value="yala-title">Yala Introduction </option>
+                    <option value="yala-des"> About Yala</option>
+                    <option value="yala-todo">Things to Do in Yala National Park</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="input-field" id="inputText" placeholder="Enter the new text" required>
+            </div>
+            <button class="save-btn" id="save">Update</button>
+
+            <button class="close-btn" id="close-popup">Exit</button>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer>
         <div class="f-row">
             <div class="f-col">
-                <img src="images/logo.png" class="f-logo" >
+                <img src="images/logo.png" class="f-logo">
                 <h1>WildLife Srilanka</h1>
             </div>
             <div class="f-col">
@@ -111,8 +116,19 @@
                 <p>+94 77748037</p>
             </div>
         </div>
+        <!-- Newsletter Subscription Form -->
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="newsletterForm">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
         <hr>
         <p class="copyright"> © 2024 Wildlife Srilanka - All Rights Reserved</p>
     </footer>
+    <script src="yala.js"></script>
+    <script src="edit.js"></script>
 </body>
+
 </html>

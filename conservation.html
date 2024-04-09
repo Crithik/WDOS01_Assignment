@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Department of Wildlife Conservation </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="edit.css">
     <link rel="icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +40,7 @@
                             <li><a href="wilpattu.html" class="class-b">for Wilpattu National Park</a></li>
                         </ul>
                     </li>
+                    <li><a href="login.html">login</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,29 +52,55 @@
  <!-- conservation introduction -->
     <section class="con-intro">
         <div>
-            <h1>Introduction of Wildlife Conservation </h1>
-            <p class="con-text">Established in 1949, the Department of Wildlife Conservation in Sri Lanka emerged in response to early conservation efforts dating back to 1889. Initially addressing the rampant destruction of wildlife resources, the department has evolved over the years. Beginning with ordinances to curb the exploitation of elephants, buffaloes, and game, and later expanding to include protected areas like Yala and Wilpattu, the department's mandate grew with the Fauna and Flora Protection Ordinance of 1937.</p>
-            <p class="con-text">The Wildlife Department's inception in 1949 marked a pivotal moment, responding to the need for a specialized entity to enforce wildlife protection laws and manage the expanding network of wildlife reserves. Over subsequent decades, the department tackled challenges arising from large-scale development projects, establishing protected areas in the Mahaweli region and initiating projects like the Mahaweli Environmental Project with USAID support.</p>
-            <p class="con-text">In 1993, the department undertook a comprehensive initiative, "Development of Wildlife Conservation and Protected Area Management," focusing on long-term management plans, human resource development, and strategies for wild elephant conservation. This project, funded by UNDP/FAO through Global Environmental Facility (GEF), significantly contributed to the department's evolution and concluded in 1999. Today, the Department of Wildlife Conservation plays a vital role in safeguarding Sri Lanka's diverse fauna and flora against various threats, reflecting its commitment to conservation and sustainable management.</p>
+            <h1 id="intro-title"></h1>
+            <p class="con-text" id="paragraph1"></p>
+            <p class="con-text" id="paragraph2"></p>
+            <p class="con-text" id="paragraph3"></p>
         </div>
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31687.202514094577!2d79.88915440602784!3d6.902523658183574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705436796510!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe></iframe>
         </div>
         
     </section>
 
     <!-- gallery -->
     <div class="gal-title">
-        <h1>Protected by Department of Wildlife Conservation Sri Lanka </h1>
+        <h1 id="image-gal"></h1>
     </div>
     <section class="gallery">
-        <img src="images/gallery2.jpg">
-        <img src="images/gallery1.jpg">
-        <img src="images/galler3.jpg">
-        <img src="images/gallery4-1589232340.jpg">
-        <img src="images/gallery5.jpg">
-        <img src="images/gallery6.jpg">
+        <img>
+        <img>
+        <img>
+        <img>
+        <img>
+        <img>
     </section>
+
+    <!-- admin edit -->
+    <button class="popup-button" id="show-popup">Edit Content</button>
+    <button class="subs-button" id="logout">Logout</button>
+
+  <div class="popup-container" id="popup-container">
+      <div class="popup-box">
+        <div class="input-box">
+          <label class="sele">Select Content to Edit : </label>
+          <select id="select">
+              <option value="intro-title">Introduction of Wildlife Conservation </option>
+              <option value="paragraph1">Paragraph-1</option>
+              <option value="paragraph2">Paragraph-2</option>
+              <option value="paragraph3">Paragraph-3</option>
+              <option value="image-gal">Protected by Department of Wildlife Conservation Sri Lanka</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <input type="text" class="input-field" id="inputText" placeholder="Enter the new text" required>
+        </div>
+          <button class="save-btn" id="save">Update</button>
+
+          <button class="close-btn" id="close-popup">Exit</button>
+      </div>
+  </div>
 
     <!-- footer -->
     <footer>
@@ -100,9 +128,19 @@
                 <p>+94 77748037</p>
             </div>
         </div>
+        <!-- Newsletter Subscription Form -->
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="newsletterForm">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+              </form>
+        </div>
         <hr>
         <p class="copyright"> © 2024 Wildlife Srilanka - All Rights Reserved</p>
     </footer>
+    <script src="conservation.js"></script>
+    <script src="edit.js"></script>
 
 </body>
 </html>

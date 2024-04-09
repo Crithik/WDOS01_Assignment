@@ -1,0 +1,127 @@
+.popup-button {
+  padding: 10px 40px;
+  font-weight: 500;
+  background: #4CAF50;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+  color: #fff;
+  font-size: 22px;
+  margin: 5px auto ;
+  display: flex;
+  display: none;
+}
+
+.popup-button:hover{
+  color: #000000;
+}
+
+.popup-button.show{
+  display: block;
+}
+
+.subs-button {
+  padding: 10px 40px;
+  font-weight: 500;
+  background: #4CAF50;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+  color: #fff;
+  font-size: 22px;
+  margin: 5px auto ;
+  display: flex;
+  display: none;
+}
+
+.subs-button:hover{
+  color: #000000;
+}
+
+.subs-button.show{
+  display: block;
+}
+
+
+.popup-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  pointer-events: none; 
+  opacity: 0;
+}
+.popup-container.show {
+  opacity: 1;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto; 
+}
+.popup-container .popup-box {
+  width: 600px;
+  background: #f2f2f2;
+  padding: 50px;
+  margin: 0 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.popup-box .close-btn {
+  margin-top: 15px;
+  width: 100%;
+  height: 60px;
+  background: #222;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+  color: #fff;
+  font-size: 22px;
+}
+
+
+.popup-box .save-btn {
+  margin-top: 15px;
+  width: 100%;
+  height: 60px;
+  background: #bebebe;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 22px;
+}
+
+
+.input-box .input-field {
+  width: 90%;
+  height: 60px;
+  font-size: 17px;
+  padding: 0 25px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+  transition: .3s;
+}
+
+.popup-box select {
+  font-size: 13px;
+  width: 150px;
+}
+
+.popup-box .sele {
+  font-size: 20px;
+}
+

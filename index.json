@@ -1,0 +1,59 @@
+{
+    "intro": {
+        "title": "Wildlife Sri Lanka",
+        "content": "Welcome to the enchanting world of Sri Lanka's wildlife! From gentle elephants to elusive leopard, creating a vibrant tapestry of nature. With its lush national parks and protected areas, Sri Lanka is a haven for wildlife lovers, offering a warm welcome to those seeking a delightful encounter with the island's rich biodiversity."
+    },
+    "content": {
+        "title": "Explore Sri Lanka ",
+        "paragraphs": [
+            "Embarking on a journey to explore Sri Lanka unveils a captivating blend of natural wonders and cultural treasures. Beyond the wildlife, the island offers ancient cities, vibrant markets, and sacred temples, showcasing a history that spans thousands of years. The national parks, such as Yala and Wilpattu, promise exhilarating safari adventures where encounters with elephants, leopards, and a myriad of bird species are commonplace. The central highlands, with their mist-covered peaks, provide a serene backdrop for trekking and birdwatching.",
+            "The coastal areas, with their pristine beaches and coral reefs, invite travelers to indulge in water activities. Cultural landmarks like Sigiriya Rock Fortress and the ancient city of Polonnaruwa transport visitors back in time, revealing the island's rich heritage. Exploring Sri Lanka is a journey that encompasses the senses, from the vibrant colors of its festivals and markets to the exotic scents of its spice gardens. Whether in search of wildlife wonders or cultural immersion, Sri Lanka unfolds as a destination where nature and history coexist harmoniously. "
+        ]
+    },
+    "wildlifeExperiences": {
+        "title": "Wildlife Experiences in Sri Lanka",
+        "image": "images/3e3380c7386152b4ddbe864ef2720c56.jpg",
+        "experiences": [
+            {
+                "title": "Safari Adventures",
+                "description": "Explore Yala and Wilpattu National Parks for thrilling encounters with elephants, leopards, and diverse bird species."
+            },
+            {
+                "title": "Elephant Orphanage",
+                "description": "Visit the Pinnawala Elephant Orphanage to witness the care and conservation efforts for orphaned elephants."
+            },
+            {
+                "title": "Hiking and Nature Trails",
+                "description": "Explore the misty trails of Horton Plains and Knuckles Mountain Range for stunning landscapes and unique flora."
+            },
+            {
+                "title": "Birdwatching",
+                "description": "Immerse yourself in the avian diversity at Sinharaja Forest Reserve and Bundala National Park."
+            },
+            {
+                "title": "Whale Watching",
+                "description": "Head to Mirissa or Trincomalee for unforgettable whale and dolphin watching experiences."
+            },
+            {
+                "title": "Turtle Hatcheries",
+                "description": "Support sea turtle conservation at hatcheries along the southern coast."
+            }
+        ]
+    },
+    "accidentSteps": {
+        "title": "Steps to Follow in Case of an Accident While in Wildlife",
+        "image": "images/forest-medical-camp.jpg",
+        "steps": [
+            "Assess Personal Safety",
+            "Call for Help",
+            "Administer First Aid",
+            "Alert Authorities or Guides",
+            "Follow Wildlife Protocol",
+            "Stay Calm and Reassure Others",
+            "Document the Incident",
+            "Provide Necessary Information",
+            "Seek Medical Attention",
+            "Report to Authorities"
+        ]
+    }
+}

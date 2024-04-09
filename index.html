@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wildlife Sri Lanka</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="edit.css">
     <link rel="icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +41,7 @@
                             <li><a href="wilpattu.html" class="class-b">for Wilpattu National Park</a></li>
                         </ul>
                     </li>
+                    <li><a href="login.html">login</a></li>
                 </ul>
             </nav>
         </header>
@@ -51,23 +53,20 @@
 
     <!-- intro -->
     <section class="cta">
-        <h1>Wildlife Sri Lanka</h1>
-        <p>Welcome to the enchanting world of Sri Lanka's wildlife! From gentle elephants to elusive leopards, creating
-            a vibrant tapestry of nature. With its lush national parks and protected areas, Sri Lanka is a haven for
-            wildlife lovers, offering a warm welcome to those seeking a delightful encounter with the island's rich
-            biodiversity.</p>
+        <h1 id="title"></h1>
+        <p id="description"></p>
     </section>
 
     <!-- content -->
     <section class="content">
-        <h1>Expolore Sri Lanka</h1>
+        <h1 id="sub-header"></h1>
 
         <div class="row">
             <div class="content-col">
-                <p>Embarking on a journey to explore Sri Lanka unveils a captivating blend of natural wonders and cultural treasures. Beyond the wildlife, the island offers ancient cities, vibrant markets, and sacred temples, showcasing a history that spans thousands of years. The national parks, such as Yala and Wilpattu, promise exhilarating safari adventures where encounters with elephants, leopards, and a myriad of bird species are commonplace. The central highlands, with their mist-covered peaks, provide a serene backdrop for trekking and birdwatching</p>
+                <p id="content1"></p>
             </div>
             <div class="content-col">
-                <p>The coastal areas, with their pristine beaches and coral reefs, invite travelers to indulge in water activities. Cultural landmarks like Sigiriya Rock Fortress and the ancient city of Polonnaruwa transport visitors back in time, revealing the island's rich heritage. Exploring Sri Lanka is a journey that encompasses the senses, from the vibrant colors of its festivals and markets to the exotic scents of its spice gardens. Whether in search of wildlife wonders or cultural immersion, Sri Lanka unfolds as a destination where nature and history coexist harmoniously. </p>
+                <p id="content2"></p>
             </div>
             
         </div>
@@ -77,28 +76,28 @@
     <section class="bullet">
         <div class="row">
             <div class="bullet-col">
-                <img src="images/3e3380c7386152b4ddbe864ef2720c56.jpg">
+                <img >
             </div>
             <ul class="bullet-col">
-            <h2>Wildlife Experiences in Sri Lanka</h2>
-            <li><span>Safari Adventures:</span> Explore Yala and Wilpattu National Parks for thrilling encounters with elephants, leopards, and diverse bird species. </li>
-            <li><span>Elephant Orphanage:</span> Visit the Pinnawala Elephant Orphanage to witness the care and conservation efforts for orphaned elephants.</li>
-            <li><span>Hiking and Nature Trails:</span> Explore the misty trails of Horton Plains and Knuckles Mountain Range for stunning landscapes and unique flora.</li>
-            <li><span>Birdwatching:</span> Immerse yourself in the avian diversity at Sinharaja Forest Reserve and Bundala National Park.</li>
-            <li><span>Whale Watching:</span> Head to Mirissa or Trincomalee for unforgettable whale and dolphin watching experiences.</li>
-            <li><span>Turtle Hatcheries:</span> Support sea turtle conservation at hatcheries along the southern coast.</li>
+            <h2 id="point"></h2>
+            <li id="point1"><span></span>  </li>
+            <li id="point2"><span></span> </li>
+            <li id="point3"><span></span> </li>
+            <li id="point4"><span></span> </li>
+            <li id="point5"><span></span></li>
+            <li id="point6"><span></span> </li>
             </ul>
         </div>
-    </section>
+    </section>  
 
     <section class="bullet">
         <div class="row">
             <ol class="num-col">
-            <h2>Steps to Follow in Case of an Accident While in Wildlife</h2>
+            <h2 id="bullet-title"></h2>
             <li>Assess Personal Safety</li>
             <li>Call for Help</li>
-            <li>Administer First Aid </li>
-            <li>Alert Authorities or Guides </li>
+            <li>Administer First Aid</li>
+            <li>Alert Authorities or Guides</li>
             <li>Follow Wildlife Protocol</li>
             <li>Stay Calm and Reassure Others</li>
             <li>Document the Incident</li>
@@ -107,10 +106,44 @@
             <li>Report to Authorities</li>
             </ol>
             <div class="num-col">
-                <img src="images/forest-medical-camp.jpg">
+                <img >
             </div>
         </div>
     </section>
+
+    <!-- admin edit -->
+    <button class="popup-button" id="show-popup">Edit Content</button>
+    <button class="subs-button" id="logout">Logout</button>
+
+  <div class="popup-container" id="popup-container">
+      <div class="popup-box">
+        <div class="input-box">
+          <label class="sele">Select Content to Edit : </label>
+          <select id="select">
+              <option value="title">Wildlife Title</option>
+              <option value="description">Title description</option>
+              <option value="sub-header">Explor SriLanka</option>
+              <option value="content1">content1</option>
+              <option value="content2">content2</option>
+              <option value="point">Wildlife Experience</option>
+              <option value="point1">point1</option>
+              <option value="point2">point2</option>
+              <option value="point3">point3</option>
+              <option value="point4">point4</option>
+              <option value="point5">point5</option>
+              <option value="point6">point6</option>
+              <option value="bullet-title">Steps to Follow in Case of an Accident</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <input type="text" class="input-field" id="inputText" placeholder="Enter the new text" required>
+        </div>
+          <button class="save-btn" id="save">Update</button>
+
+          <button class="close-btn" id="close-popup">Exit</button>
+      </div>
+  </div>
 
     <!-- footer -->
     <footer>
@@ -138,11 +171,21 @@
                 <p>+94 77748037</p>
             </div>
         </div>
+        <!-- Newsletter Subscription Form -->
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="newsletterForm">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+              </form>
+        </div>
         <hr>
         <p class="copyright"> © 2024 Wildlife Srilanka - All Rights Reserved</p>
+
+        
     </footer>
-
-
+    <script src="index.js" defer></script>
+    <script src="edit.js"></script>
 
 </body>
 
